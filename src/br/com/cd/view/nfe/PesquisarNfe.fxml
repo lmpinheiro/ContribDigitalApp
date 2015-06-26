@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.23874755381604695" layoutX="284.0" layoutY="98.0" prefHeight="400.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxWidth="316.0" minHeight="0.0" minWidth="241.0" prefHeight="398.0" prefWidth="241.0">
+               <children>
+                  <Label layoutX="7.0" layoutY="8.0" text="Pesquisar NF-e" textFill="#ff790b">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="6.0" layoutY="58.0" text="Razão Social" />
+                  <Label layoutX="6.0" layoutY="125.0" text="Período" />
+                  <Label layoutX="7.0" layoutY="191.0" text="Situação" />
+                  <Label layoutX="7.0" layoutY="266.0" text="CNPJ do Destinatário" />
+                  <TextField layoutX="5.0" layoutY="80.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                  <HBox layoutX="5.0" layoutY="146.0" spacing="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                     <children>
+                        <DatePicker prefHeight="25.0" prefWidth="102.0" />
+                        <Label text="a">
+                           <HBox.margin>
+                              <Insets top="8.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker prefHeight="25.0" prefWidth="102.0" />
+                     </children>
+                  </HBox>
+                  <ComboBox layoutX="6.0" layoutY="213.0" prefHeight="25.0" prefWidth="178.0" />
+                  <TextField layoutX="5.0" layoutY="289.0" maxWidth="195.0" prefHeight="25.0" prefWidth="178.0" AnchorPane.leftAnchor="5.0" />
+                  <Button layoutX="134.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" text="Pesquisar" AnchorPane.rightAnchor="7.0" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView layoutY="7.0" prefHeight="598.0" prefWidth="753.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn minWidth="46.0" prefWidth="46.0" text="Série" />
+                      <TableColumn minWidth="63.0" prefWidth="63.0" text="Número" />
+                        <TableColumn minWidth="99.0" prefWidth="119.0" text="Data deEmissão" />
+                        <TableColumn minWidth="155.0" prefWidth="245.0" text="CPF/CNPJ do Destinatário" />
+                        <TableColumn prefWidth="194.0" text="Situação" />
+                        <TableColumn minWidth="85.0" prefWidth="107.0" text="UF do Dest." />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
